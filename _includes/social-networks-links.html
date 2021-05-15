@@ -395,6 +395,18 @@
   </li>
   {%- endif -%}
 
+  {%- if network[0] == "feed" -%}
+  <li class="list-inline-item">
+    <a href="{{ network[1] }}" title="Feed">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Feed</span>
+    </a>
+  </li>
+  {%- endif -%}
+
 {%- endfor -%}
 
 </ul>
