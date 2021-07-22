@@ -1,5 +1,11 @@
 <ul class="list-inline text-center footer-links">
 
+{%- if site.social-network-links.devlooped -%}
+  <li class="list-inline-item">
+    <a href="https://devlooped.com" title="Devlooped LLC"><img src="https://api.kzu.io/devlooped?48" style="border-radius: 50%"></a>
+  </li>
+{%- endif -%}
+
 {%- if site.social-network-links.email -%}
   <li class="list-inline-item">
     <a href="mailto:{{ site.social-network-links.email }}" title="Email me">
