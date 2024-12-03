@@ -6,7 +6,7 @@
     {% assign item = items[name] %}
     <div class="archive-group">
         <div style="display: block"><a style="padding-top: 10px" id="{{ name | slugize }}" name="{{ name | slugize }}">&nbsp;</a></div>
-        <h3>{{ name }}</h3>
+        <h3 id="{{ name }}">{{ name }}</h3>
         <ul>
             {% for post in item %}
             <li>
